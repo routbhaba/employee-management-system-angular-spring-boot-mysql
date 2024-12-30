@@ -8,20 +8,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 @Entity
 @Table(name="admin")
 public class adminModel {
 	
 	
-	public adminModel() {}
 	
-	
-	public adminModel(String adminName, String adminPassword) {
-		super();
-		this.adminName = adminName;
-		this.adminPassword = adminPassword;
-	}
 	
 	
 	@Id
@@ -37,24 +39,6 @@ public class adminModel {
 	
 	
 	
-	public long getAdminID() {
-		return adminID;
-	}
-	public void setAdminID(long adminID) {
-		this.adminID = adminID;
-	}
-	public String getAdminName() {
-		return adminName;
-	}
-	public void setAdminName(String adminName) {
-		this.adminName = adminName;
-	}
-	public String getAdminPassword() {
-		return adminPassword;
-	}
-	public void setAdminPassword(String adminPassword) {
-		this.adminPassword = adminPassword;
-	}
 	
 	
 	
