@@ -13,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.EmployeeDto;
-import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Employee;
-import com.example.demo.repository.EmployeeRepository;
 import com.example.demo.service.EmployeeService;
 
 import lombok.RequiredArgsConstructor;
@@ -29,7 +27,6 @@ import java.util.Map;
 @RequestMapping("/api/v1/")
 public class EmployeeController {
 
-	private EmployeeRepository employeeRepository;
 	private final EmployeeService employeeService;
 
 	// get all data
